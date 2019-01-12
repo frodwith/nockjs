@@ -293,7 +293,7 @@ function can(a, b) {
     if ( 0 === tot ) {                                                                                                                       
       return zero;                                                                                                                               
     }                                                                                                                                         
-    sal = slaq(ai, tot);
+    var sal = slaq(ai, tot);
 
     // chop the list atoms in                                                                                                                  
     cab = b;                                                                                                                          

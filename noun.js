@@ -187,7 +187,7 @@ Atom.prototype.bytes = function() {
 }
 
 Atom.cordToString = function(c) {
-  var bytes = c.bytes();
+  var bytes = c.bytes(),
       chars = [];
 
   for ( var i = 0; i < bytes.length; ++i ) {
@@ -316,7 +316,7 @@ function i(num) {
 }
 
 function m(str) {
-  var i, octs = new Array(str.length);
+  var i, j, octs = new Array(str.length);
   for ( i = 0, j = octs.length - 1; i < octs.length; ++i, --j ) {
     octs[j] = (str.charCodeAt(i) & 0xff).toString(16);
   }
